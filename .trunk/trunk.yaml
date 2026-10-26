@@ -4,27 +4,29 @@ cli:
 plugins:
   sources:
     - id: trunk
-      ref: v1.7.3
+      ref: v1.11.0
       uri: https://github.com/trunk-io/plugins
 runtimes:
   enabled:
     - ruby@3.4.2
     - node@22.16.0
-    - python@3.10.8
+    - python@3.14.4
 lint:
   disabled:
     - cspell
     - renovate
   enabled:
-    - actionlint@1.7.8
+    - pinact@5.0.2
+    - taplo@0.10.0
+    - actionlint@1.7.12
     - brakeman@5.4.0
-    - checkov@3.2.500
+    - checkov@3.3.30
     - git-diff-check
-    - markdownlint@0.47.0
-    - prettier@3.8.1
+    - markdownlint@0.50.0
+    - prettier@3.9.10
     - rubocop@1.39.0
-    - semgrep@1.151.0
-    - trufflehog@3.90.12
+    - semgrep@1.182.1
+    - trufflehog@3.99.7
     - yamllint@1.38.0
 actions:
   enabled:
