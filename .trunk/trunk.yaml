@@ -13,10 +13,11 @@ runtimes:
     - python@3.14.4
 lint:
   disabled:
+    # Trunk plugins v1.11.0 still pass pinact the single-dash `-format` flag, which pinact 5 rejects.
+    - pinact
     - cspell
     - renovate
   enabled:
-    - pinact@5.0.2
     - taplo@0.10.0
     - actionlint@1.7.12
     - brakeman@5.4.0
